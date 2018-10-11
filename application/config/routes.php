@@ -49,6 +49,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'welcome';
+// $route['default_controller'] = 'welcome';
+
+// hnhd added
+// set up the default controller
+// means that when the url = ./ then it will run the function index() on the controller Home
+$route['default_controller'] = 'home';
+//---------------------------------------
+
+
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
