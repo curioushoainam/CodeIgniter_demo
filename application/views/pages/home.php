@@ -20,5 +20,27 @@
 			?>
 
 		</table>	
-	</div>
+	</div>	
 </div>
+
+<?php 
+if (isset($_SESSION['username']) && $_SESSION['username'])
+	echo $_SESSION['username'];	
+else 
+	echo 'No session username';
+	
+echo '<br>';
+if (isset($_SESSION['email']) && $_SESSION['email'])
+	echo $_SESSION['email'];
+else 
+	echo 'No session email';
+
+echo '<br>';
+if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'])
+	echo $_SESSION['logged_in'];
+else 
+	echo 'No session logged_in';
+
+?>
+
+
