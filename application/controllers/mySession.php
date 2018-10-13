@@ -13,16 +13,16 @@ class mySession extends CI_Controller {
 	    
 	public function index(){
 		// Adding Session Data
-		// $newdata = array(
-		//         'username'  => 'johndoe',
-		//         'email'     => 'johndoe@some-site.com',
-		//         'logged_in' => TRUE
-		// );
-		// $this->session->set_userdata($newdata);
+		$newdata = array(
+	        'username'  => 'johndoe',
+	        'email'     => 'johndoe@some-site.com',
+	        'logged_in' => TRUE
+		);
+		$this->session->set_userdata($newdata);
 
-		// $this->session->set_userdata('username', 'johndoe');
-		// $this->session->set_userdata('email', 'johndoe@some-site.com');
-		// $this->session->set_userdata('logged_in', 'TRUE');
+		$this->session->set_userdata('username', 'johndoe');
+		$this->session->set_userdata('email', 'johndoe@some-site.com');
+		$this->session->set_userdata('logged_in', 'TRUE');
 
 		//--------------------------------------------------------
 		// Flashdata

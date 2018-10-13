@@ -1,5 +1,5 @@
 <?php
-class News_model extends CI_Controller {	
+class News_model extends CI_Model {	
 
 	function __construct(){
 		// Run the parent _contruct() function first
